@@ -6,8 +6,6 @@ jobs:
   output-debug:
     runs-on: ubuntu-18.04
     steps:
-      - uses: ./
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: cantdocpp/github-action-explore-debug@master
         with:
           jq_selector: ".pull_request"
